@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=no">
+        <title>Overpower Digital Library</title>
+        <!--CSS-->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet"> 
+    <!--JavaScript-->
+    <script type="text/javascript" src="../js/cardfunctions.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="../img/opbanner.png" class="banner" alt="banner">
+            <div class="nav">
+                <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="dc.html">DC Overpower</a></li>
+                <li><a href="marvel.html" class="selected">Marvel Overpower</a></li>
+                <li><a href="rules.html">Game Rules</a></li>
+                <li><a>About</a></li>
+                <li><a href="https://www.ebay.ca/sch/i.html?_nkw=Overpower%20Card%20Game&norover=1&mkevt=1&mkrid=706-157299-031933-7&mkcid=2&keyword=overpower%20card%20game&crlp=435201349176_&MT_ID=590606&geo_id=34636&rlsatarget=kwd-40044530&adpos=&device=c&mktype=&loc=9001039&poi=&abcId=1146466&cmpgn=8364310952&sitelnk=&adgroupid=85332349146&network=g&matchtype=b&gclid=CjwKCAjwgISIBhBfEiwALE19SUUs4_e3coEoru_bbPIePLA1jEQju85Urpf3oXw32YPVwHkr-3yFsRoCXl8QAvD_BwE">Purchase</a></li>
+                </ul>
+            </div>
+        </header>
+        <main id="MarvMain">
+            <h1>Marvel Overpower</h1>
+            <h2>Hero Cards:</h2>
+            <p>Hero Cards are the main cards that determine the heroes you will be using during play. They give basic stats for the hero rated on a 1 to 8 scale. These stats are borken down into four catgories: Energy,
+                Fighting, Strength and Intellect. Some of the Marvel Overpower hero cards existed before the intellect stat was later added on. Use the drop down below to learn about some of the most popular characters in DC Overpower. Not all of them are necessarly heros your favourite villains also get in
+                on the action.
+            </p>
+            <select id="cardChooserMarv" name="cardChooserMarv" onchange="changeDropMarv()">
+                <option value="defaultMarv">Card Back</option>
+                <option value="spiderMan">Spider-Man</option>
+                <option value="wolverine">Wolverine</option>
+                <option value="docDoom">Doctor Doom</option>
+                <option value="venom">Venom</option>
+                <option value="ironMan">Iron Man</option>
+            </select>
+            <div id="cardBoxMarv">
+                <img id="pictureBoxMarv" src="../img/marvCard.jpg" alt="marvCardBack">
+            </div>
+            <div id="synopsisMarv" hidden>
+                <h2>Hero Synopsis:</h2>
+                <div id="spiderMan" hidden>
+                    <h2>Spider-Man</h2>
+                    <p>Peter Benjamin Parker lost his parents, Richard and Mary Parker, at a young age. Orphaned as a toddler, he had to live with his Uncle Ben and Aunt May.
+                        During a science exhibition, he was bitten by a Radioactive Spider, granting him his powers. He decided to use these powers for his own selfish gain, until his Uncle Ben died at the hands 
+                        of a Burglar he could've stopped. It was at that point that he learned "With great power, there must also come great responsibility", and decided to live up to his uncle's mantra and use 
+                        his powers as a force for good as Spider-Man. <br>Source: <a href="https://marvel.fandom.com/wiki/Peter_Parker_(Earth-616)">Spier-Man Fandom</a></p><br>
+                    <iframe width="420" height="315"
+                        src="https://www.youtube.com/watch?v=VJO2OxMHZOo">
+                    </iframe>
+                </div>
+                <div id="IronMan" hidden>
+                    <h2>Iron Man</h2>
+                    <p>Tony Stark is a genius inventor and billionaire industrialist, who suits up in his armor of cutting-edge technology to become the super hero Iron Man. The adopted son of weapons manufacturer 
+                        Howard Stark, Tony inherited his family's company at a young age following his parents' death. While overseeing a manufacturing plant in a foreign country, Stark was kidnapped by 
+                        local terrorists. Instead of giving in to his captors' demands to build weapons for them, Stark created a powerful suit of armor for himself to escape. Returning to America, 
+                        Stark further upgraded the armor and put his vast resources and intellect to use for the betterment of the world as Iron Man.
+                         <br>Source: <a href="https://marvel.fandom.com/wiki/Anthony_Stark_(Earth-616)">Iron Man Fandom</a></p>
+                    <br>
+                </div>
+                <div id="wolverine" hidden>
+                    <h2>Wolverine</h2>
+                    <p>FJames Howlett was born to a wealthy Canadian family at the end of the 19th century, being the son of Mrs. Elizabeth Howlett and her husband's employee, Thomas Logan. He was forced to 
+                        abandon his family after the tragic murder of his father, a situation which caused his mutant bestial abilities of accelerated healing factor, keenly enhanced senses and bone claws in 
+                        each hand to manifest. Adopting the name Logan, he wandered the world, living a long life filled with blood, war and betrayal, having vile Sabretooth as his archenemy and the 
+                        Japanese warrior Ogun as his sensei. Unfortunately, by always acting as a lone wolf, Logan was an unwitting subject of the Weapon X program and had his bones coated in indestructible 
+                        Adamantium, becoming an even more lethal asset.[74] He was rescued and assisted by Mac and Heather Hudson, joining Department H as a Canadian government operative known as 
+                        the Wolverine.
+                        <br>Source: <a href="https://marvel.fandom.com/wiki/James_Howlett_(Earth-616)">Wolverine Fandom</a></p>
+                </div>
+                <div id="venom" hidden>
+                    <h2>Venom</h2>
+                    <p>A hulking and twisted distortion of Spider-Man, Venom is the result of an alien symbiote merged with a human holding a bitter grudge against Peter Parker. This combination has proven nearly 
+                        lethal to the wall-crawler numerous times. Despite his hatred of Spider-Man, Venom has a twisted sense of morality, avoiding harming anyone he deems to be innocent and even performing 
+                        heroic deeds. However, it is never clear how long Venom's darker impulses can be held in check. No matter how hard anyone tries to keep the symbiote down, Venom always manages to come back, 
+                        like a plague.
+                         <br>Source: <a href="https://www.marvel.com/characters/venom-eddie-brock/in-comics">Marvel Venom</a></p>
+                </div>
+                <div id="docDoom" hidden>
+                    <h2>Doctor Doom</h2>
+                    <p>TDr. Victor von Doom, Ph.D aka Doctor Doom[33] is a Latverian politician who serves as the Monarch and Supreme Leader for the Kingdom of Latveria. He was scarred from an accident and 
+                        wears an iron mask and armor to hide his true face.[35] He is considered one of the most brilliant minds and scientists on the planet Earth.[36] He is also a sorcerer with skills in 
+                        magic matching the most powerful beings in the Universe, making him a potential candidate for Sorcerer Supreme.[37] He hopes to bring order and betterment to humanity through world c
+                        onquest. Unequalled in ability, ego, and will power, he has come into conflict with both superhumans and cosmic beings. He is best known as the rival of Reed Richards and 
+                        arch-enemy of the Fantastic Four.
+                         <br>Source: <a href="https://marvel.fandom.com/wiki/Victor_von_Doom_(Earth-616)">Doctor Doom fandom</a></p>
+                </div>
+            </div>
+            <h2>Special Cards</h2>
+            <p>Special cards are playable hero specific cards. These cards can only be used by the hero named on the card and provide unqiue abilities of the given hero.</p>
+            <div id="eventBox">
+                <img id="eventMarv1" src="../img/marvCard.jpg" alt="eventPicMarv1">
+                <img id="eventMarv2" src="../img/marvCard.jpg" alt="eventPicMarv2">
+                <img id="eventMarv3" src="../img/marvCard.jpg" alt="eventPicMarv3">
+            </div>
+            <h2>Power Cards</h2>
+            <p>Power cards each consist of a number from 1 to 8 and a type, Energy, Fighting, Strength, Intellect, Multi-Power, or Any-Power. Power cards can be used as an attack of the level of the number, or as 
+                a defense of the level of the number. A character can play a power card whenever their grid is high enough. For instance, a character with 6 energy could play any energy power card from 1-6, 
+                but couldn't play 7s or 8s. (This requirement is the same on attack or defense.) Multipower power cards can be used in any of the types shown (either all four, or just Energy, Fighting, or Strength);
+                 their type may be chosen as they are played. CLick on the card below to see some examples</p>
+            <div>
+                <img id="powerBox" alt="powerPic" src="../img/dcPowerOne.jpg" onclick="cardFlipDC()">
+            </div>
+        </main>
+        <footer>
+            <h1>&copy; Justin Harvey 2021</h1>
+        </footer>
+    </body>
+</html>
